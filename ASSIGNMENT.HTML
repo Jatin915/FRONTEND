@@ -3,30 +3,76 @@
 <head>
   <title>My CV - Assignment</title>
 </head>
-<body>
+<body style="background-color: skyblue; font-family: Arial, sans-serif; color: black;">
     <!-- Header Section -->
-    <header style="display: flex; justify-content: space-between; align-items: center; text-align: center; padding: 20px 200px 20px 40px; background-color: lightblue;">
+    <header style="border-radius: 20px; border: 1px solid skyblue; display: flex; justify-content: space-between; align-items: center; text-align: center; padding: 20px 200px 20px 40px; background-color: lightblue;">
         <img src="./profile.jpeg" alt="Profile Picture" width="200" height="200" style="border-radius:50%; border:2px solid black;">
         <div>
-            <h1 style="color: darkblue;">Jatin Gupta</h1>
-            <h3 style="color: gray;">Aspiring Software Engineer | Web Developer</h3>
+            <h1 style="color: darkblue; font-size: 50px;">Jatin Gupta</h1>
+            <h3 style="color: gray; font-size: 35px;">Aspiring Software Engineer | Web Developer</h3>
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <h2 style="color: darkred;">Contact</h2>
-    <ul style="list-style-type: none; padding:0;">
-        <li><b>Email:</b> gjatin278@gmail.com</li>
-        <li><b>Phone:</b> +91 0000000000</li>
-        <li><b>LinkedIn:</b> linkedin.com/in/yourname</li>
-    </ul>
-
     <br>
-    <!-- About Me -->
-  <h2 style="color: darkred;">About Me</h2>
-  <p>
-    I am a <b>Computer Science student</b> passionate about <i>web development</i> and 
-    <u>problem-solving</u>.
-  </p>
+    <main style="display: flex; flex-direction: column; align-items: center; padding-top: 20px;">
+        <div style="display: flex; justify-content: space-between; width: 100%;">    
+            <!-- Contact Section -->
+            <div style="border-radius: 20px; border: 1px solid skyblue; padding: 20px; background-color: cadetblue; width: fit-content; margin: auto;">
+                <h2 style="color: darkred;">Contact</h2>
+                <ul style="list-style-type: none; padding:0;">
+                    <li><b>Email:</b> gjatin278@gmail.com</li>
+                    <li><b>Phone:</b> +91 0000000000</li>
+                    <li><b>LinkedIn:</b> linkedin.com/in/yourname</li>
+                </ul>
+            </div>
+
+            <br>
+            
+            <!-- Skills Section -->
+            <div style="border-radius: 20px; border: 1px solid skyblue; padding: 20px; background-color: cadetblue; width: fit-content; margin: auto;">
+                <h2 style="color: darkred;">Skills</h2>
+                <ul style="list-style-type: none; padding:0; font-weight: bold;">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+
+            <!-- About Me -->
+            <div style="border-radius: 20px; border: 1px solid skyblue; padding: 20px; background-color: cadetblue; width: fit-content; margin: auto;">
+                <h2 style="color: darkred;">About Me</h2>
+                <p>
+                    I am a <b>Computer Science student.</b><br>Passionate about <b><i>web development</i> and 
+                    <u>problem-solving</u>.</b>
+                </p>
+            </div>
+        </div>
+
+
+
+  <br>
+     <div style="text-align: center; width: 50%; background-color: cadetblue; border-radius: 20px; border: 1px solid skyblue; padding: 20px; margin-top: 20px;">
+        <h2 style="color: darkred;">Education</h2>
+        <table style="border:2px solid black; border-collapse:collapse; width:80%; margin:auto;">
+            <tr style="border: 2px solid black;">
+            <th style="border:2px solid black; padding:8px;">Year</th>
+            <th style="border:2px solid black; padding:8px;">Degree</th>
+            <th style="border:2px solid black; padding:8px;">Institute</th>
+            </tr>
+            <tr style="border: 2px solid black;">
+            <td style="border:2px solid black; padding:8px;">2028</td>
+            <td style="border:2px solid black; padding:8px;">B.Tech in CSE</td>
+            <td style="border:2px solid black; padding:8px;">GLA University</td>
+            </tr>
+            <tr style="border: 2px solid black;">
+            <td style="border:2px solid black; padding:8px;">2024</td>
+            <td style="border:2px solid black; padding:8px;">Class 12th</td>
+            <td style="border:2px solid black; padding:8px;">Wendy Acadamy High School</td>
+            </tr>
+        </table>
+    </div>
+    </main>
 </body>
 </html>
