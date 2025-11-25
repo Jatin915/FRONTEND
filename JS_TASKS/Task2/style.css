@@ -1,0 +1,92 @@
+/* .size{
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sizeIncrease{
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+}
+button{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+* {
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #373737;
+    padding: 0 100px;
+}
+
+form {
+    display: flex;
+    justify-content: start;
+    padding: 30px 10px;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(119, 119, 119);
+    gap: 20px;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.498);
+    font-size: 15px;
+}
+
+input {
+    height: 30px;
+    width: 80%;
+    font-size: large;
+}
+
+div {
+    display: flex;
+    gap: 10px;
+    width: 83%;
+
+}
+
+button {
+    height: 35px;
+    width: 83%;
+}
+
+button:nth-child(1) {
+    background-color: pink;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(156, 2, 2);
+    font-weight: 600;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+button:nth-child(2) {
+    background-color: rgb(3, 106, 241);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+    letter-spacing: 1px;
+}

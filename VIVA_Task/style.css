@@ -1,0 +1,34 @@
+    body { 
+        font-family: Arial; 
+        padding: 0 30px;
+    }
+
+    .question { 
+        margin-bottom: 15px; 
+        padding: 15px; 
+        border: 1px solid #000000c1; 
+        border-radius: 10px;
+
+    }
+
+    .option { 
+        display: block; 
+        margin: 15px 0; 
+        padding: 10px; 
+        background-color: #75757518;
+        border: 0.5px solid #77777780; 
+        border-radius: 5px;
+        cursor: pointer; 
+    }
+
+    .correct { 
+        background: lightgreen; 
+    }
+
+    .wrong { 
+        background: pink; 
+    }
+
+    .other {
+        opacity: 0.5;
+    }

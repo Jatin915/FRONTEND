@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chessboard {
+  display: flex;
+  flex-wrap: wrap;
+  height: 480px;
+  width: 480px;
+}
+
+.odd{
+    background: #f0d9b5;
+    width: 60px;
+    height: 60px;
+}
+
+.even{
+    background: #b58863; 
+    width: 60px;
+    height: 60px;
+}
