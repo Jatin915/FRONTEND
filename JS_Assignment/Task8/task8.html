@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .gallery-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.6s ease; /* BONUS FADE-IN */
+}
+
+.gallery-grid img.loaded {
+  opacity: 1; /* fade-in */
+}
+
+#loadMore {
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#loadMore:hover {
+  background: #0056b3;
+}
+</style>
+</head>
+<body>
+    <div class="gallery-container">
+  <h2>Random Image Gallery</h2>
+  <div id="galleryGrid" class="gallery-grid"></div>
+  <button id="loadMore">Load More</button>
+</div>
+    <script src="task8.js"></script>
+</body>
+</html>
