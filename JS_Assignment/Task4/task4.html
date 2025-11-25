@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container {
+  width: 400px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+small {
+  color: red;
+  height: 15px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* BONUS — red & green borders */
+input.error-border {
+  border: 2px solid red;
+}
+
+input.success-border {
+  border: 2px solid green;
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+  <h2>Registration Form</h2>
+
+  <form id="regForm">
+
+    <label>Name:</label>
+    <input type="text" id="name">
+    <small class="error"></small>
+
+    <label>Email:</label>
+    <input type="text" id="email">
+    <small class="error"></small>
+
+    <label>Password:</label>
+    <input type="password" id="password">
+    <small class="error"></small>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+</body>
+</html>
