@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Practice</title>
+  <style>
+  
+  body{
+    margin: 0;
+    font-family: Arial, Sans-Serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    width: 350px;
+    padding: 25px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    }
+    
+    h2 {
+     text-align: center; 
+    }
+    
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    
+    label {
+      font-weight: 600;
+      margin-top: 15px;
+    }
+    
+    .gender {
+      display: flex;
+      gap: 15px;
+      
+      label {
+        font-weight: 100;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    
+    #branch {
+     margin-top: 10px; 
+    }
+    
+    .skills {
+      display: flex;
+      gap: 15px;
+
+      label {
+        margin-top: 5px;
+        font-weight: 100;
+      }
+    }
+    
+
+    
+    button {
+        padding: 10px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .required::after {
+      content: " *";
+      color: red;
+    }
+    
+    
+    
+  </style>
+</head>
+  <body>
+    <form class="form-container">
+      <h2>Student Registration</h2>
+      
+      <!-- Name -->
+      <label for="name" class="required" required>Full Name</label>
+      <input type="text" name="name" id="name" value="" placeholder="Enter your name" required/>
+      
+      <!-- Email -->
+      <label for="email" class="required" required>Email</label>
+      <input type="email" name="email" id="email" value="" required/>
+      <!-- Password -->
+      <label for="password" class="required" required>Password</label>
+      <input type="password" name="password" id="password" value="" required/>
+      
+      <!-- Age -->
+      <label for="Age" class="required" required>Age</label>
+      <input type="number" name="age" id="age" value="" required/>
+      
+      
+      <!-- Gender -->
+      
+      <label for="Gender" class="required" required>Gender</label>
+      <div class="gender">
+        <label>
+          <input type="radio" name="gender" id="gender" required/>Male
+        </label>
+        <label>
+          <input type="radio" name="gender" id="gender" required/>Female
+        </label>
+      </div>
+      
+      
+      <!-- Branch -->
+      <label for="Branch" class="required" required>Branch</label>
+      <select name="branch" id="branch" required>
+        <option value="">Select Branch</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>ME</option>
+        <option>CE</option>
+      </select>
+      
+      
+      <!-- Skills -->
+      <label for="skills" class="required" required>Skills</label>
+      <div class="skills">
+        <label for="html">
+          <input type="checkbox" name="html" id="html"/>HTML
+        </label>
+        <label for="css">
+          <input type="checkbox" name="css" id="css"/>CSS
+        </label>
+        <label for="javascript">
+          <input type="checkbox" name="javascript" id="javascript"/>JavaScript
+        </label>
+      </div>
+      
+      
+      <!-- About You -->
+      <label for="about" id="about" class="required" required>About You</label>
+      <textarea name="about" id="about" rows="3" placeholder="Write something about yourself" readonly></textarea>
+      
+      <!-- Submit -->
+      <button type="submit">Register</button>
+
+      <p class="note">All fields marked required must be filled</p>    
+    </form>
+  </body>
+</html>
